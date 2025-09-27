@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  vercelToken: ''
+  vercelToken: 'U5GLseX6zDjUoQ9pbkNoioRl'
 };
