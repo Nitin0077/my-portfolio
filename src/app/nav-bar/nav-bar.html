@@ -1,0 +1,49 @@
+<!-- Navbar with hamburger for mobile -->
+<nav class="navbar navbar-light bg-white shadow-sm sticky-top d-md-none px-3">
+  <button class="btn btn-outline-dark" 
+    type="button" 
+    data-bs-toggle="offcanvas" 
+    data-bs-target="#offcanvasSidebar"
+    aria-controls="offcanvasSidebar">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <span class="navbar-brand mb-0 h1">Portfolio</span>
+</nav>
+
+<!-- Off-canvas sidebar for mobile & normal sidebar for md+ -->
+<div class="offcanvas-md offcanvas-start sidebarr d-flex flex-column flex-shrink-0 p-3 text-black bg-white"
+  tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel" style="width:250px;">
+  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-black text-decoration-none">
+    <span class="fs-4">Portfolio</span>
+  </a>
+  <hr>
+  <ul class="nav nav-pills flex-column mb-auto">
+    <li class="nav-item">
+      <a href="#" class="nav-link active">
+        <i class="fa-solid fa-house me-2"></i> Home
+      </a>
+    </li>
+    <li><a routerLink="Projects" class="nav-link text-black"><i class="fa-solid fa-box me-2"></i> Project</a></li>
+    <li><a href="#" class="nav-link text-black"><i class="fa-solid fa-gauge me-2"></i> Timeline</a></li>
+    <li><a href="#" class="nav-link text-black"><i class="fa-solid fa-table me-2"></i> Orders</a></li>
+    
+    <li><a href="#" class="nav-link text-black"><i class="fa-solid fa-users me-2"></i> Customers</a></li>
+  </ul>
+  <hr>
+  <div class="dropdown">
+    <a href="#" class="d-flex align-items-center text-black text-decoration-none dropdown-toggle" id="dropdownUser1"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+      <strong>Nitin</strong>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+      <li><a class="dropdown-item" href="#">New project…</a></li>
+      <li><a class="dropdown-item" href="#">Settings</a></li>
+      <li><a class="dropdown-item" href="#">Profile</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Sign out</a></li>
+    </ul>
+  </div>
+</div>

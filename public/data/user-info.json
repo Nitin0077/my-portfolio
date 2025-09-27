@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Open Source Contributions",
+    "value": "1,245",
+    "change": "+120 this year",
+    "positive": true,
+    "icon": "fa-brands fa-github",
+    "color": "#ff0000",
+    "spark": [42, 68, 55, 90, 71, 83, 64, 99, 78, 88, 66, 92]
+  },
+  {
+    "title": "Stack Overflow Reputation",
+    "value": "3,600",
+    "change": "+250 this month",
+    "positive": true,
+    "icon": "fa-brands fa-stack-overflow",
+    "color": "#f48024",
+    "spark": [35, 58, 63, 70, 80, 77, 65, 91, 84, 73, 95, 89]
+  },
+  {
+    "title": "Code Reviews",
+    "value": "540",
+    "change": "Across 40 repos",
+    "positive": true,
+    "icon": "fa-solid fa-code-branch",
+    "color": "#0ea5e9",
+    "spark": [50, 62, 57, 79, 88, 74, 69, 96, 81, 87, 60, 93]
+  },
+  {
+    "title": "Deployed Apps",
+    "value": "22",
+    "change": "Public & private",
+    "positive": true,
+    "icon": "fa-solid fa-rocket",
+    "color": "#16a34a",
+    "spark": [28, 49, 66, 72, 59, 85, 74, 91, 88, 76, 90, 83]
+  }
+]

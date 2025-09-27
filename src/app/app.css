@@ -1,0 +1,103 @@
+/* === Base Layout === */
+.app-container {
+  display: flex;
+  min-height: 100vh;                 /* full viewport height */
+  background-color: #f5f5f5;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+}
+
+/* === Sidebar === */
+.sidebar {
+  width: 250px;
+  margin: 10px;
+  border-radius: 15px;
+            /* solid background to show radius */
+  color: #fff;
+  /* box-shadow: 0 4px 10px rgba(0,0,0,0.15); */
+
+  display: flex;
+  flex-direction: column;            /* vertical nav for desktop */
+  overflow: hidden;                  /* clip children inside rounded edges */
+
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  align-self: flex-start;
+  height: 98vh;                 /* never taller than viewport */
+}
+
+/* Scroll if content exceeds viewport */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.3);
+  border-radius: 3px;
+}
+
+/* === Main Content === */
+.main-content {
+  flex: 1;
+  margin: 10px 10px 10px 0;
+  border-radius: 15px;
+  overflow-y: auto;
+  /* background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); */
+  padding: 2rem 10px;
+}
+
+/* === Nav Pills & Active Link === */
+.nav-pills .nav-link {
+  color: #ddd;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  margin: 0.2rem 0;
+  transition: background 0.2s;
+}
+.nav-pills .nav-link:hover {
+  background: rgba(255,255,255,0.1);
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-image: linear-gradient(195deg,#42424a,#191919);
+}
+
+/* === Responsive (Tablet & Mobile) === */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;          /* stack sidebar above content */
+  }
+
+  .sidebar {
+    width: 100%;              /* full width bar */
+    height: auto;             /* 🔑 let content set height */
+    position: relative;       /* no sticky on small screens */
+    flex-direction: row;      /* horizontal nav */
+    justify-content: space-around;
+    padding: 0.5rem;
+  }
+
+  .sidebar .nav {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .main-content {
+    margin: 10px;
+  }
+
+  .nav-pills .nav-link {
+    margin: 0 0.3rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+/* Optional tiny-screen tweak */
+@media (max-width: 480px) {
+  .sidebar .nav-pills .nav-link span,
+  .sidebar .nav-pills .nav-link svg {
+    font-size: 0.9rem;
+  }
+}

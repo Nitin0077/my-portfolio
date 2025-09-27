@@ -1,0 +1,86 @@
+<mat-card class="mat-card">
+  <div class="filter">
+    <mat-card-title>My Projects</mat-card-title>
+
+    <mat-form-field class="small" appearance="outline">
+      <mat-label>Filter projects</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Search name, budget" />
+    </mat-form-field>
+  </div>
+
+  <div class="table-scroll">
+    <mat-table matSort [dataSource]="dataSource" class="projects-table">
+      <ng-container matColumnDef="project">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Project</mat-header-cell>
+        <mat-cell *matCellDef="let p">{{ p.name }}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="tech">
+        <mat-header-cell *matHeaderCellDef>Technologies</mat-header-cell>
+        <mat-cell *matCellDef="let p">
+          <ng-container *ngFor="let t of p.tech">
+            <i [class]="t.icon" [style.color]="t.color"
+               matTooltip="{{ t.name }}" matTooltipPosition="above"
+               style="margin-right:6px;font-size:18px;">
+            </i>
+          </ng-container>
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="budget">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Budget</mat-header-cell>
+        <mat-cell *matCellDef="let p">{{ p.budget }}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="completion">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Completion</mat-header-cell>
+        <mat-cell *matCellDef="let p">
+          <span style="margin-right:10px">{{ p.completion }}%</span>
+          <mat-progress-bar [value]="p.completion"
+            [ngClass]="p.completion === 100 ? 'green-bar' :
+                       p.completion > 60 ? 'orange-bar' : 'primary-bar'">
+          </mat-progress-bar>
+        </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;" class="small"></mat-row>
+    </mat-table>
+  </div>
+
+  <div class="actions">
+    <button  (click)="openPopup()"> <i class="fa fa-plus"></i> New Project</button>
+    <mat-paginator [pageSizeOptions]="[10,20,30]" showFirstLastButtons></mat-paginator>
+  </div>
+</mat-card>
+
+<!-- 🟢 POPUP FORM (no extra component) -->
+<div class="popup-backdrop" *ngIf="showPopup">
+  <div class="popup-box">
+    <h3>Add New Project</h3>
+    
+    <form (ngSubmit)="onNewProjectCreate() ">
+      <div class="form-group">
+      <mat-form-field appearance="outline" class="small">
+        <mat-label>Project Name</mat-label>
+        <input matInput [(ngModel)]="newProjectName" name="name" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="small">
+        <mat-label>Budget</mat-label>
+        <input matInput type="number" [(ngModel)]="projectBudget" name="budget" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="small">
+        <mat-label>Completion %</mat-label>
+        <input matInput type="number" [(ngModel)]="projectCompletion" name="completion" required min="0" max="100" />
+      </mat-form-field>
+
+      <div class="popup-actions">
+        <button class="btn btn-success" type="submit">Save</button>
+        <button class="btn btn-gray" type="button" (click)="closePopup()">Cancel</button>
+      </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,114 @@
+.main {
+  /* padding: 2rem 10px; */
+  /* background: #f8f9fa; */
+  font-family: Inter, Helvetica, Arial, sans-serif;
+}
+
+/* Typography */
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+}
+
+/* Dashboard header */
+.db {
+  margin-bottom: 2rem;
+}
+
+/* ===== Skills + Timeline Row ===== */
+/* ===== Skills + Timeline Row ===== */
+.my-skill {
+  display: flex;
+  flex-wrap: wrap;          /* allow wrapping on smaller screens */
+  gap: 1.5rem;              /* spacing between each card */
+  margin-bottom: 2rem;
+}
+
+.my-skill section {
+  flex: 1 1 300px;          /* grow and shrink; minimum width ~300px */
+  min-width: 260px;
+  box-sizing: border-box;
+}
+
+/* Individual card look */
+.skills-overview,
+.project-timeline {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Breakpoints */
+@media (max-width: 1024px) {
+  /* Reduce fixed width on medium screens */
+  .my-skill section {
+    flex: 1 1 45%;          /* roughly two columns */
+  }
+
+  /* override the inline width on your middle section */
+  .my-skill .project-timeline[style] {
+    width: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Stack into one column for mobile */
+  .my-skill {
+    flex-direction: column;
+  }
+
+  .my-skill section {
+    flex: 1 1 100%;
+    width: 100% !important; /* ensure full width */
+  }
+}
+
+/* ===== Projects table + Language column ===== */
+.col-b {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 1.5rem;
+}
+
+.col-b > * {
+  /* flex: 1 1 300px; */
+}
+
+.lan-icon{
+  margin-left: 5px;
+}
+
+.lan-icon span{
+  margin-left: 10px;
+}
+
+/* Vertical divider for language list items */
+.v-divider {
+  width: 1px;
+  background-color: #ccc;
+  height: 30px;
+  margin: 0 17px;
+  position: relative;
+  top: -20px;
+}
+
+/* ===== Responsive tweaks ===== */
+@media (max-width: 768px) {
+  
+  .col-b {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .my-skill section,
+  .col-b > * {
+    flex: 1 1 100%;
+  }
+}

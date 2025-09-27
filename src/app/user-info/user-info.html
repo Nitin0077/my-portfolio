@@ -1,0 +1,59 @@
+<!-- add Font Awesome in index.html head if not already present -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" /> -->
+
+<!-- <div class="stats-container mb-4">
+  <div class="stat-card" *ngFor="let c of cards">
+    <div class="stat-left">
+      <div class="stat-title">{{ c.title }}</div>
+      <div class="stat-value">{{ c.value }}</div>
+      <div class="stat-change" [ngClass]="{ 'positive': c.positive, 'negative': !c.positive }">
+        {{ c.change }}
+      </div>
+    </div>
+
+    <div class="stat-icon-wrap" role="img" aria-label="{{c.title}} icon">
+      <div class="stat-icon">
+        <i class="fa" [class]="c.icon" [style.color]="c.color"></i>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+<!-- Add Highcharts script in angular.json or index.html if not already done -->
+<div class="stats-container mb-4">
+  <div class="stat-card" *ngFor="let c of cards">
+    <div class="stat-left">
+      <div class="stat-title">{{ c.title }}</div>
+      <div class="stat-value">{{ c.value }}</div>
+      <div class="stat-change" [ngClass]="{ positive: c.positive, negative: !c.positive }">
+        {{ c.change }}
+      </div>
+    </div>
+
+    <!-- sparkline click -->
+    <div class="stat-icon-wrap" (click)="openModal(c.title,c.spark,c.color)">
+      <highcharts-chart
+        [constructorType]="chartConstructor"
+        [options]="c.sparkOptions"
+        [oneToOne]="true"
+        style="width:60px; height:40px; display:block;">
+      </highcharts-chart>
+    </div>
+  </div>
+</div>
+
+<!-- full chart modal -->
+<div class="modal-backdrop" *ngIf="info.length" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button class="close-btn" (click)="closeModal()">×</button>
+
+    <highcharts-chart
+      
+      [constructorType]="chartConstructor"
+      [options]="fullChartOptions"
+      style="width:100%; height:400px; display:block;">
+    </highcharts-chart>
+  </div>
+</div>

@@ -1,0 +1,274 @@
+[
+  {
+    "name": "Portfolio Website",
+    "icon": "fa-solid fa-id-card",
+    "color": "#4caf50",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "TypeScript", "icon": "fa-solid fa-code", "color": "#3178C6" },
+      { "name": "Highcharts", "icon": "fa-solid fa-chart-line", "color": "#2c9fdc" }
+    ],
+    "budget": "$0 (Personal)",
+    "completion": 100
+  },
+  {
+    "name": "Real-time Chat App",
+    "icon": "fa-solid fa-comments",
+    "color": "#2196f3",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "Node.js", "icon": "fa-brands fa-node", "color": "#339933" },
+      { "name": "Socket.IO", "icon": "fa-solid fa-plug", "color": "#010101" }
+    ],
+    "budget": "$500",
+    "completion": 80
+  },
+  {
+    "name": "Crypto Dashboard",
+    "icon": "fa-solid fa-coins",
+    "color": "#f2a900",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "Highcharts", "icon": "fa-solid fa-chart-line", "color": "#2c9fdc" },
+      { "name": "REST API", "icon": "fa-solid fa-server", "color": "#6c757d" }
+    ],
+    "budget": "$1,000",
+    "completion": 60
+  },
+  {
+    "name": "Task Manager",
+    "icon": "fa-solid fa-tasks",
+    "color": "#ff9800",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "Firebase", "icon": "fa-solid fa-fire", "color": "#FFCA28" }
+    ],
+    "budget": "$300",
+    "completion": 90
+  },
+  {
+    "name": "Weather Forecast App",
+    "icon": "fa-solid fa-cloud-sun",
+    "color": "#03a9f4",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "OpenWeather API", "icon": "fa-solid fa-cloud", "color": "#607d8b" }
+    ],
+    "budget": "$150",
+    "completion": 100
+  },
+  {
+    "name": "Blog CMS",
+    "icon": "fa-solid fa-blog",
+    "color": "#673ab7",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "Node.js", "icon": "fa-brands fa-node", "color": "#339933" },
+      { "name": "MongoDB", "icon": "fa-solid fa-database", "color": "#47A248" }
+    ],
+    "budget": "$750",
+    "completion": 75
+  },
+  {
+    "name": "E-Commerce Store",
+    "icon": "fa-solid fa-store",
+    "color": "#e91e63",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "Stripe", "icon": "fa-brands fa-stripe-s", "color": "#635bff" },
+      { "name": "Node.js", "icon": "fa-brands fa-node", "color": "#339933" }
+    ],
+    "budget": "$1,500",
+    "completion": 50
+  },
+  {
+    "name": "Expense Tracker",
+    "icon": "fa-solid fa-wallet",
+    "color": "#009688",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "IndexedDB", "icon": "fa-solid fa-database", "color": "#607d8b" }
+    ],
+    "budget": "$100",
+    "completion": 95
+  },
+  {
+    "name": "Video Streaming Platform",
+    "icon": "fa-solid fa-video",
+    "color": "#ff5722",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "Node.js", "icon": "fa-brands fa-node", "color": "#339933" },
+      { "name": "HLS", "icon": "fa-solid fa-play", "color": "#555555" }
+    ],
+    "budget": "$2,000",
+    "completion": 40
+  },
+  {
+    "name": "Fitness Tracker",
+    "icon": "fa-solid fa-dumbbell",
+    "color": "#8bc34a",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "Ionic", "icon": "fa-solid fa-mobile-screen", "color": "#3880ff" }
+    ],
+    "budget": "$700",
+    "completion": 70
+  },
+  {
+    "name": "Online Learning Platform",
+    "icon": "fa-solid fa-graduation-cap",
+    "color": "#795548",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "Firebase", "icon": "fa-solid fa-fire", "color": "#FFCA28" }
+    ],
+    "budget": "$3,000",
+    "completion": 55
+  },
+  {
+    "name": "Travel Booking App",
+    "icon": "fa-solid fa-plane",
+    "color": "#ff7043",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "Node.js", "icon": "fa-brands fa-node", "color": "#339933" },
+      { "name": "Stripe", "icon": "fa-brands fa-stripe-s", "color": "#635bff" }
+    ],
+    "budget": "$1,800",
+    "completion": 65
+  },
+  {
+    "name": "Inventory Management",
+    "icon": "fa-solid fa-boxes-stacked",
+    "color": "#607d8b",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "MongoDB", "icon": "fa-solid fa-database", "color": "#47A248" }
+    ],
+    "budget": "$900",
+    "completion": 85
+  },
+  {
+    "name": "Music Streaming App",
+    "icon": "fa-solid fa-music",
+    "color": "#9c27b0",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "Node.js", "icon": "fa-brands fa-node", "color": "#339933" }
+    ],
+    "budget": "$2,500",
+    "completion": 45
+  },
+  {
+    "name": "News Aggregator",
+    "icon": "fa-solid fa-newspaper",
+    "color": "#3f51b5",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "REST API", "icon": "fa-solid fa-server", "color": "#6c757d" }
+    ],
+    "budget": "$400",
+    "completion": 90
+  },
+  {
+    "name": "Restaurant Ordering App",
+    "icon": "fa-solid fa-utensils",
+    "color": "#c2185b",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "Firebase", "icon": "fa-solid fa-fire", "color": "#FFCA28" }
+    ],
+    "budget": "$1,200",
+    "completion": 60
+  },
+  {
+    "name": "Car Rental Platform",
+    "icon": "fa-solid fa-car",
+    "color": "#ff9800",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "Node.js", "icon": "fa-brands fa-node", "color": "#339933" }
+    ],
+    "budget": "$2,200",
+    "completion": 50
+  },
+  {
+    "name": "Pet Adoption Site",
+    "icon": "fa-solid fa-paw",
+    "color": "#4db6ac",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "Firebase", "icon": "fa-solid fa-fire", "color": "#FFCA28" }
+    ],
+    "budget": "$350",
+    "completion": 85
+  },
+  {
+    "name": "Job Portal",
+    "icon": "fa-solid fa-briefcase",
+    "color": "#2196f3",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "Node.js", "icon": "fa-brands fa-node", "color": "#339933" },
+      { "name": "MongoDB", "icon": "fa-solid fa-database", "color": "#47A248" }
+    ],
+    "budget": "$1,400",
+    "completion": 70
+  },
+  {
+    "name": "Event Management",
+    "icon": "fa-solid fa-calendar-days",
+    "color": "#ff5722",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "Firebase", "icon": "fa-solid fa-fire", "color": "#FFCA28" }
+    ],
+    "budget": "$600",
+    "completion": 88
+  },
+  {
+    "name": "Online Quiz App",
+    "icon": "fa-solid fa-question",
+    "color": "#9e9d24",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "REST API", "icon": "fa-solid fa-server", "color": "#6c757d" }
+    ],
+    "budget": "$250",
+    "completion": 92
+  },
+  {
+    "name": "Photo Gallery",
+    "icon": "fa-solid fa-image",
+    "color": "#5c6bc0",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "Cloudinary", "icon": "fa-solid fa-cloud", "color": "#607d8b" }
+    ],
+    "budget": "$300",
+    "completion": 80
+  },
+  {
+    "name": "Language Learning App",
+    "icon": "fa-solid fa-language",
+    "color": "#26a69a",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "Node.js", "icon": "fa-brands fa-node", "color": "#339933" }
+    ],
+    "budget": "$900",
+    "completion": 55
+  },
+  {
+    "name": "Smart Home Dashboard",
+    "icon": "fa-solid fa-house",
+    "color": "#607d8b",
+    "tech": [
+      { "name": "Angular", "icon": "fa-brands fa-angular", "color": "#DD0031" },
+      { "name": "IoT API", "icon": "fa-solid fa-plug", "color": "#000000" }
+    ],
+    "budget": "$2,800",
+    "completion": 35
+  }
+]

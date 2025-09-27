@@ -1,0 +1,33 @@
+<div class="projects-grid">
+  <div *ngFor="let p of projects" class="project-card">
+    <div class="card-body">
+      <h3 class="project-title">{{ p.name }}</h3>
+
+      <!-- Description (if any) -->
+      <p class="project-desc">
+        {{ p.description || 'No description available.' }}
+      </p>
+
+      <!-- Language & created date -->
+      <div class="meta">
+        <span class="lang">
+          <i class="fa-solid fa-code me-1"></i>{{ p.language || 'N/A' }}
+        </span>
+        <span class="date">
+          <i class="fa-regular fa-calendar me-1"></i>
+          {{ p.created_at | date:'mediumDate' }}
+        </span>
+      </div>
+
+      <!-- Buttons -->
+      <div class="btn-group">
+        <a [href]="p.html_url" target="_blank" class="btn btn-outline-dark">
+          <i class="fa-brands fa-github me-1"></i> Code
+        </a>
+        <a [href]="'https://' + p.name + '.vercel.app'" target="_blank" class="btn btn-primary">
+          <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Live
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

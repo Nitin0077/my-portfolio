@@ -1,0 +1,44 @@
+[
+  {
+    "icon": "fa-brands fa-html5",
+    "color": "#E34F26",
+    "name": "HTML5",
+    "des": "Strong knowledge of semantic HTML and accessibility best practices."
+  },
+  {
+    "icon": "fa-brands fa-css3-alt",
+    "color": "#1572B6",
+    "name": "CSS3",
+    "des": "Experienced with Flexbox, Grid, animations, and responsive design."
+  },
+  {
+    "icon": "fa-brands fa-js",
+    "color": "#F7DF1E",
+    "name": "JavaScript",
+    "des": "ES6+ features, DOM manipulation, and async programming."
+  },
+  {
+    "icon": "fa-brands fa-angular",
+    "color": "#DD0031",
+    "name": "Angular",
+    "des": "Building scalable SPAs with Angular 8–16 and Rxjs NgRx."
+  },
+  {
+    "icon": "fa-brands fa-react",
+    "color": "#61DAFB",
+    "name": "React",
+    "des": "Component-based UI development and hooks with libraries."
+  },
+  {
+    "icon": "fa-brands fa-node",
+    "color": "#339933",
+    "name": "Node.js",
+    "des": "Backend APIs and real-time applications with Express and Socket.IO."
+  },
+  {
+    "icon": "fa-brands fa-git-alt",
+    "color": "#F05032",
+    "name": "Git",
+    "des": "Version control, branching, and collaborative workflows."
+  }
+]

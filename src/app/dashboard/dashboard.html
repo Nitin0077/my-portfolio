@@ -1,0 +1,53 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+<div class="main">
+  <!-- Dashboard Header -->
+  <div class="db">
+    <h1 style="font-size: 1.5rem; font-weight: 700;">Dashboard</h1>
+    <span style="color: #737373;">Check all my skills and project timeline</span>
+
+    
+  </div>
+
+  <app-user-info></app-user-info>
+
+  <!-- Skills + Timeline Section -->
+  <div class="my-skill">
+    <!-- Skills Overview -->
+    
+    <section class="skills-overview col-lg-4 col-md-6 mb-4">
+      <h2>My Skill</h2>
+      <app-skills-chart></app-skills-chart>
+    </section>
+
+    <!-- Project Timeline -->
+    <section class="project-timeline col-lg-4 col-md-6 mb-4">
+     <h2>Corn Weat Production 2023</h2>
+      <app-project-timeline></app-project-timeline>
+    </section>
+    <section class="project-timeline col-lg-4 col-md-6 mb-4">
+      <h2>U.S Solar Growth</h2>
+      <app-line-chart></app-line-chart>
+    </section>
+  </div>
+  <!-- project timeline -->
+  <div class="col-b">
+    <div class="project-timeline col-lg-8 col-md-6 mb-md-0 mb-4 ">
+      <app-projects-table class="table "></app-projects-table>
+
+
+    </div>
+    <div class="skills-overview ">
+      <h2 class="mb-4">Langauge Timeline</h2>
+      <div class="lan-time " *ngFor="let item of overviewLanguage">
+        <span class="lan-icon"><i [class]='item.icon ' [style.color]='item.color' style="font-size: 20px;"></i>
+        <span style="font-size: .875rem;">{{item.name}}</span></span>
+        <p style="font-size: .75rem!important; color: #737373!important; margin-bottom: 0px; margin-left: 40px;">{{item.des}}</p>
+        <div class="v-divider"></div>
+      </div>
+    </div>
+  </div>
+</div>

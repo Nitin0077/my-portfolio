@@ -1,0 +1,14 @@
+<div class="sidebar-overlay" (click)="closeSidebar.emit()"></div>
+
+<aside class="sidebar">
+  <header class="sidebar-header">
+    <h2>User Menu</h2>
+    <button class="close-btn" (click)="closeSidebar.emit()">&times;</button>
+  </header>
+
+  <ul class="sidebar-links">
+    <li><a routerLink="/profile">Profile</a></li>
+    <li><a routerLink="/settings">Settings</a></li>
+    <li><a routerLink="/logout">Logout</a></li>
+  </ul>
+</aside>

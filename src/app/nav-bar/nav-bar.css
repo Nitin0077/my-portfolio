@@ -1,0 +1,9 @@
+.sidebarr {
+  border-radius: 15px;
+  height: 97vh;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-image: linear-gradient(195deg,#42424a,#191919);
+  color: #fff;
+}
