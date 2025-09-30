@@ -1,5 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
+import { CommonModule } from '@angular/common';
 import { SkillsChart } from "../skills-chart/skills-chart";
 import { ProjectTimeline } from "../my-skill/project-timeline/project-timeline";
 import { LineChart } from "../my-skill/line-chart/line-chart";
@@ -11,7 +12,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [SkillsChart, ProjectTimeline, LineChart, ProjectTable, NgFor, UserInfo],
+  imports: [SkillsChart, ProjectTimeline, LineChart, ProjectTable,CommonModule, UserInfo],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css'
 })

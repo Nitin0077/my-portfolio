@@ -57,3 +57,17 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+# Angular Portfolio
+
+A modern, responsive personal portfolio built with **Angular**.  
+It showcases projects, skills, and an About page—perfect for developers
+looking to present their work in a clean and interactive way.
+
+## Features
+- Responsive Angular + Material Design UI
+- Project table with search, sort, and pagination
+- Popup form to add new projects on the fly
+- Integrated Highcharts visualizations
+- About page highlighting skills and contact links
