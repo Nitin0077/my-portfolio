@@ -47,12 +47,12 @@ export class ProjectTimeline {
     },
     series: [
       {
-        name: 'Corn',
+        name: 'JavaScript',
         type:'column',
         data: [387749, 280000, 129000, 64300, 54000, 34300]
       },
       {type:'column',
-        name: 'Wheat',
+        name: 'TypeScript',
         data: [45321, 140000, 10000, 140500, 19500, 113500]
       }
     ]
