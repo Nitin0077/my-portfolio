@@ -18,7 +18,7 @@ export class LineChart implements OnInit {
 
   chartOptions: Highcharts.Options = {
     title: {
-      text: 'Dynamic Line Chart',
+      text: '',
       align: 'left'
     },
     yAxis: {
